@@ -6,7 +6,6 @@ pipeline {
     ORG = 'mvankleef123'
     APP_NAME = 'kroketapp'
     CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-    DOCKER_REGISTRY = 'http://nexus-jx.192.168.99.100.nip.io/repository/jenkinsxdocker'
   }
   stages {
     stage('CI Build and push snapshot') {
